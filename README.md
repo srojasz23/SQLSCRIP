@@ -133,9 +133,8 @@ CREATE TABLE Notas (
 );
 GO
 
--- ================================================================
+
 -- DATOS INICIALES
--- ================================================================
 
 -- ROLES
 INSERT INTO Roles (Nombre, Descripcion) VALUES
@@ -144,9 +143,8 @@ INSERT INTO Roles (Nombre, Descripcion) VALUES
 ('ALUMNO', 'Usuario alumno');
 GO
 
--- ================================================================
+
 -- USUARIOS BASE (Contraseña = "12345" en SHA256)
--- ================================================================
 -- SHA256("12345") = 5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5
 
 INSERT INTO Usuarios (Username, PasswordHash, NombreCompleto, Email, RoleId, IsActive)
@@ -193,17 +191,11 @@ INSERT INTO Inscripciones (AlumnoId, AsignacionId)
 VALUES (1, 1);
 GO
 
--- ================================================================
--- VERIFICACIÓN FINAL
--- ================================================================
-SELECT '✅ Base de datos creada correctamente' AS Resultado;
+
+SELECT 'Base de datos creada correctamente' AS Resultado;
 SELECT * FROM Roles;
 SELECT Username, NombreCompleto, Email, RoleId FROM Usuarios;
 GO
-
-
-
-
 
 
 
