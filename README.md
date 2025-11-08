@@ -145,7 +145,7 @@ GO
 
 
 -- USUARIOS BASE (Contraseña = "12345" en SHA256)
--- SHA256("12345") = 5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5
+
 
 INSERT INTO Usuarios (Username, PasswordHash, NombreCompleto, Email, RoleId, IsActive)
 VALUES 
